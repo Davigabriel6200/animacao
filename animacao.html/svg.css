@@ -1,0 +1,28 @@
+.animate-svg {
+    width: 800px;
+    margin: 200px auto;
+    align-content: center;
+}
+
+.animate-svg svg {
+    stroke-width: 2px;
+    stroke: yellow;
+    width: 100%;
+    height: 100%;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: svganimation 4s ease-in-out forwards infinite;
+    -webkit-animation: svganimation 4s ease-in-out forwards infinite;
+}
+
+@keyframes svganimation {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    60% {
+        stroke-dashoffset: 0%;
+    }
+    100% {
+        stroke-dashoffset: 0%;
+    }
+}
