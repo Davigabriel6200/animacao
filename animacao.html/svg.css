@@ -1,14 +1,29 @@
-.animate-svg {
-    width: 800px;
-    margin: 200px auto;
-    align-content: center;
+body {
+    background-color: rgb(24, 22, 22);
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    white-space: pre
+}
+
+.shp0 {
+    fill: #0a0a0a
+}
+
+#tasks-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .animate-svg svg {
     stroke-width: 2px;
     stroke: yellow;
-    width: 100%;
-    height: 100%;
+    align-items: center;
     stroke-dashoffset: 1000;
     stroke-dasharray: 1000;
     animation: svganimation 4s ease-in-out forwards infinite;
